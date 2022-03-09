@@ -8,7 +8,7 @@ const countLetters = (sentenceToCount) => {
 
   for (let char of sentenceWithoutSpaces) {
 
-    if (letterCountObject[char] == undefined) {
+    if (letterCountObject[char] === undefined) {
       letterCountObject[char] = 1;
     } else {
       letterCountObject[char] += 1;
