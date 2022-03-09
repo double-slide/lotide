@@ -50,7 +50,7 @@ assertEqualArrays((without([1, 2, 3], [1])), [2, 3]); // => [2, 3]
 assertEqualArrays(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]); // => ["1", "2"]
 assertEqualArrays(without([-1, 0, 1, 2], [1, 3]), [-1, 0, 2]); // => ["1", "2"]
 assertEqualArrays(without([1.1, 2.2, 3.3], [1.1, 2]), [2.2, 3.3]); // => ["1", "2"]
-console.log("--------")
+console.log("--------");
 
 // CONFIRM SOURCE ARRAY IS NOT MODIFIED
 const words = ["hello", "world", "lighthouse"];
