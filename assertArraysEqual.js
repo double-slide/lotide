@@ -1,6 +1,13 @@
 const assertEqualArrays = function(array1, array2) {
   let areArraysEqual = false;
   
+  // check for two empty arrays
+  if (array1.length === 0 && array2.length === 0) {
+    areArraysEqual = true;
+  }
+
+
+  // check for non-empty arrays matching true/false
   if (array1.length !== array2.length) {
     areArraysEqual = false;
   } else {
@@ -13,6 +20,7 @@ const assertEqualArrays = function(array1, array2) {
     }
   }
 
+  // console log if pass or fail
   if (areArraysEqual === true) {
     console.log(`✅ Assertion Passed: ${array1} === ${array2}`);
   } else {
@@ -23,4 +31,5 @@ const assertEqualArrays = function(array1, array2) {
 
 // TEST CODE
 assertEqualArrays([1, 2, 3, 4], [1, 2, 3, 4]);
+assertEqualArrays([], []);
 
