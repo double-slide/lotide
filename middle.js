@@ -4,32 +4,32 @@
 // for even numbered arrays, return middle two elements
 
 
-const assertEqualArrays = function(array1, array2) {
+// const assertArraysEqual = function(array1, array2) {
   
-  let areArraysEqual = false;
+//   let areArraysEqual = false;
 
-  if (array1.length === 0 && array2.length === 0) {
-    areArraysEqual = true;
-  }
+//   if (array1.length === 0 && array2.length === 0) {
+//     areArraysEqual = true;
+//   }
 
-  if (array1.length !== array2.length) {
-    areArraysEqual = false;
-  } else {
-    for (let i = 0; i < array1.length; i++) {
-      if (array1[i] !== array2[i]) {
-        areArraysEqual = false;
-      } else {
-        areArraysEqual = true;
-      }
-    }
-  }
+//   if (array1.length !== array2.length) {
+//     areArraysEqual = false;
+//   } else {
+//     for (let i = 0; i < array1.length; i++) {
+//       if (array1[i] !== array2[i]) {
+//         areArraysEqual = false;
+//       } else {
+//         areArraysEqual = true;
+//       }
+//     }
+//   }
 
-  if (areArraysEqual === true) {
-    console.log(`✅ Assertion Passed: ${array1} === ${array2}`);
-  } else {
-    console.log(`🛑 Assertion Failed: ${array1} !== ${array2}`);
-  }
-};
+//   if (areArraysEqual === true) {
+//     console.log(`✅ Assertion Passed: ${array1} === ${array2}`);
+//   } else {
+//     console.log(`🛑 Assertion Failed: ${array1} !== ${array2}`);
+//   }
+// };
 
 
 const middle = function(arrayToFindMiddle) {
@@ -57,11 +57,5 @@ const middle = function(arrayToFindMiddle) {
 
 };
 
+module.exports = middle;
 
-
-// TEST CODE
-console.log(assertEqualArrays(middle([1, 2, 3, 4]), [2, 3]));
-console.log(assertEqualArrays(middle([1]), []));
-console.log(assertEqualArrays(middle([1, 2]), []));
-console.log(assertEqualArrays(middle([1, 2, 3]), [2]));
-console.log(assertEqualArrays(middle([1, 2, 3, 4, 5, 6, 7, 8, 9]), [5]));
