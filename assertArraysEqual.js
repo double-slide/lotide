@@ -1,4 +1,4 @@
-const assertEqualArrays = function(array1, array2) {
+const assertArraysEqual = function(array1, array2) {
   let areArraysEqual = false;
   
   // check for two empty arrays
@@ -20,16 +20,8 @@ const assertEqualArrays = function(array1, array2) {
     }
   }
 
-  // console log if pass or fail
-  if (areArraysEqual === true) {
-    console.log(`✅ Assertion Passed: ${array1} === ${array2}`);
-  } else {
-    console.log(`🛑 Assertion Failed: ${array1} !== ${array2}`);
-  }
+  return areArraysEqual;
 
 };
 
-// TEST CODE
-assertEqualArrays([1, 2, 3, 4], [1, 2, 3, 4]);
-assertEqualArrays([], []);
-
+module.exports = assertArraysEqual;
