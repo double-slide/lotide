@@ -26,10 +26,6 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `function1(...)`: description
-* `function2(...)`: description
-* `function3(...)`: description
-
 * `head()`: takes array, returns 0th element
 * `tail()`: takes array, returns 1st, 2nd.... nth elements
 * `middle()`: takes array, returns middle element(s) in array, depending if odd/even
