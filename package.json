@@ -1,7 +1,7 @@
 {
   "name": "@iaan_j/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A min-clone of the lodash library. For educational purposes only, not use in commercial code.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/double-slide/lotide.git"
   },
-  "author": "",
+  "author": "Iaan Johnston",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/double-slide/lotide/issues"
