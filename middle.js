@@ -27,3 +27,4 @@ const middle = function(arrayToFindMiddle) {
 };
 
 module.exports = middle;
+
