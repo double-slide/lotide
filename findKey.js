@@ -26,27 +26,28 @@ const findKey = function(object, callback) {
   return undefined;
 };
 
+module.exports = findKey;
 
 
-let objectToCheck1 = {
-  "Blue Hill": { stars: 1 },
-  "Akaleri":   { stars: 3 },
-  "noma":      { stars: 2 },
-  "elBulli":   { stars: 3 },
-  "Ora":       { stars: 2 },
-  "Akelarre":  { stars: 3 }
-};
+// let objectToCheck1 = {
+//   "Blue Hill": { stars: 1 },
+//   "Akaleri":   { stars: 3 },
+//   "noma":      { stars: 2 },
+//   "elBulli":   { stars: 3 },
+//   "Ora":       { stars: 2 },
+//   "Akelarre":  { stars: 3 }
+// };
 
 
-let objectToCheck2 = {
-  "iaan": { stars: 1 },
-  "ryan":   { stars: 3 },
-  "drew":      { stars: 7 },
-  "shelly":   { stars: 9 },
-};
+// let objectToCheck2 = {
+//   "iaan": { stars: 1 },
+//   "ryan":   { stars: 3 },
+//   "drew":      { stars: 7 },
+//   "shelly":   { stars: 9 },
+// };
 
 
 
-// TEST CODE
-assertEqual(findKey(objectToCheck1, x => x.stars === 2), "noma");
-assertEqual(findKey(objectToCheck2, x => x.stars === 9), "shelly");
+// // TEST CODE
+// assertEqual(findKey(objectToCheck1, x => x.stars === 2), "noma");
+// assertEqual(findKey(objectToCheck2, x => x.stars === 9), "shelly");

@@ -1,25 +1,27 @@
-const assertEqualArrays = function(array1, array2) {
-  let areArraysEqual = false;
+// const { isModuleNamespaceObject } = require("util/types");
+
+// const assertEqualArrays = function(array1, array2) {
+//   let areArraysEqual = false;
   
-  if (array1.length !== array2.length) {
-    areArraysEqual = false;
-  } else {
-    for (let i = 0; i < array1.length; i++) {
-      if (array1[i] !== array2[i]) {
-        areArraysEqual = false;
-      } else {
-        areArraysEqual = true;
-      }
-    }
-  }
+//   if (array1.length !== array2.length) {
+//     areArraysEqual = false;
+//   } else {
+//     for (let i = 0; i < array1.length; i++) {
+//       if (array1[i] !== array2[i]) {
+//         areArraysEqual = false;
+//       } else {
+//         areArraysEqual = true;
+//       }
+//     }
+//   }
 
-  if (areArraysEqual === true) {
-    console.log(`✅ Assertion Passed: ${array1} === ${array2}`);
-  } else {
-    console.log(`🛑 Assertion Failed: ${array1} !== ${array2}`);
-  }
+//   if (areArraysEqual === true) {
+//     console.log(`✅ Assertion Passed: ${array1} === ${array2}`);
+//   } else {
+//     console.log(`🛑 Assertion Failed: ${array1} !== ${array2}`);
+//   }
 
-};
+// };
 
 
 
@@ -45,9 +47,10 @@ const flatten = function(arrayToFlatten) {
 
 };
 
-// TEST CODE
-let testArray = [1, 2, 3, [4, 5, 6], 7, 8, [9, 10]];
-assertEqualArrays(flatten(testArray), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+module.exports = flatten;
+// // TEST CODE
+// let testArray = [1, 2, 3, [4, 5, 6], 7, 8, [9, 10]];
+// assertEqualArrays(flatten(testArray), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
 
 

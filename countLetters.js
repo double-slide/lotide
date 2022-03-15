@@ -17,4 +17,6 @@ const countLetters = (sentenceToCount) => {
   return letterCountObject;
 };
 
-console.log(countLetters("lighthouse in the house"));
+// console.log(countLetters("lighthouse in the house"));
+
+module.exports = countLetters;
